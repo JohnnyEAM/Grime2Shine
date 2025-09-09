@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grime2Shine Detailing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#work">Our Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  <section class="hero" id="home">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Grime2Shine Logo" class="logo" />
+    </div>
+    <h1>Grime2Shine Detailing</h1>
+    <p>Transforming your car into a showroom masterpiece. Every detail. Every shine. Every time.</p>
+    <button onclick="document.getElementById('work').scrollIntoView({ behavior: 'smooth' });">See Our Magic</button>
+  </section>
+
+ <section id="work">
+  <h2>Our Work</h2>
+  <div class="gallery" id="slideshow">
+    <div class="circle">
+      <img src="before.mx5.jpg" alt="Before" id="beforeImage" />
+    </div>
+    <div class="circle">
+      <img src="after.mx5.jpg" alt="After" id="afterImage" />
+    </div>
+  </div>
+</section>
+
+ <section class="pricing" id="pricing">
+  <h2 class="reveal">Pricing</h2>
+  <h3>*Prices Can Increase Depending On Condition Of Vehicle*</h3>
+  <div class="pricing-table">
+    <div class="pricing-category bronze reveal">
+      <h3>Bronze Package</h3>
+      <ul>
+        <li>Exterior wash & dry</li>
+        <li>Snow Foam Agitation</li>
+        <li>Wheels cleaned & tyres dressed</li>
+        <li>Interior vacuum & wipe down</li>
+        <li><strong>Price: £50</strong></li>
+      </ul>
+    </div>
+    <div class="pricing-category silver reveal">
+      <h3>Silver Package</h3>
+      <ul>
+        <li>Everything in Bronze</li>
+        <li>Interior shampoo & basic trim detail</li>
+        <li>Exterior tar & iron Decontamination</li>
+        <li>Pet hair removal</li>
+        <li><strong>Price: £120</strong></li>
+      </ul>
+    </div>
+    <div class="pricing-category gold reveal">
+      <h3>Gold Package</h3>
+      <ul>
+        <li>Everything in Silver</li>
+        <li>Engine bay steam cleaned and dressed</li>
+        <li>Interior steam clean</li>
+        <li>Fabric extraction/leather clean and dressing</li>
+        <li>Plastic trim restoration inside and out</li>
+        <li>Paint Protection Sealant</li>
+        <li><strong>Price: £200</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pricing interior-exterior-section" id="interior-exterior">
+  <h2 class="fade-in-section">Interior/<wbr>Exterior Packages</h2>
+  <div class="pricing-table">
+    <!-- Exterior Only Packages -->
+    <div class="pricing-category fade-in-section">
+      <h3>Basic Exterior</h3>
+      <ul>
+        <li>Exterior wash & dry</li>
+        <li>Snow Foam Agitation</li>
+        <li>Wheels cleaned & tyres dressed</li>
+        <li><strong>Price: £30</strong></li>
+      </ul>
+    </div>
+    <div class="pricing-category fade-in-section">
+      <h3>Premium Exterior</h3>
+      <ul>
+        <li>Everything in Basic Exterior</li>
+        <li>Tar & iron Decontamination</li>
+        <li>Paint protection sealant</li>
+        <li><strong>Price: £60</strong></li>
+      </ul>
+    </div>
+
+    <!-- Interior Only Packages -->
+    <div class="pricing-category fade-in-section">
+      <h3>Basic Interior</h3>
+      <ul>
+        <li>Interior vacuum</li>
+        <li>Wipe down of surfaces</li>
+        <li><strong>Price: £30</strong></li>
+      </ul>
+    </div>
+    <div class="pricing-category fade-in-section">
+      <h3>Deep Interior Clean</h3>
+      <ul>
+        <li>Vacuum & steam clean</li>
+        <li>Fabric extraction / leather clean</li>
+        <li>Trim & plastic dressing</li>
+        <li><strong>Price: £90</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="about-animated">
+  <h2>About Us</h2>
+  <div class="about-wrapper-inline">
+    <div class="about-image reveal">
+      <img src="team.jpg" alt="Grime2Shine Team" />
+    </div>
+
+    <div class="about-content">
+      <h2 class="reveal"><span>Driven by Passion,</span> Powered by Shine</h2>
+      <p class="reveal">
+        At <strong>Grime2Shine Detailing</strong>, we don't just clean cars — we elevate them.
+        Every curve, every surface, every shine tells a story. Our mission?
+        Bring out the best in your vehicle with artistry, care, and obsession over the details.
+      </p>
+
+      <div class="values-inline reveal">
+        <div><span>✨</span> Eco-Friendly Products</div>
+        <div><span>🔧</span> Expert Technicians</div>
+        <div><span>💎</span> Showroom Finish Guaranteed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+      Do you use your own water/Electricity?
+    </button>
+    <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn" hidden>
+      Unfortunately, we require a hose tap and electrical plug available for us on site.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+      How long does a full detailing service take?
+    </button>
+    <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn" hidden>
+      Our full detailing typically takes between 3 to 5 hours, depending on the size and condition of your vehicle.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+      Do I need to book an appointment in advance?
+    </button>
+    <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn" hidden>
+      Yes! We recommend booking ahead to secure your preferred date and time, so that we can provide you with a clean car when you need it!
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq5" id="faq5-btn">
+      Can you remove pet hair and odors?
+    </button>
+    <div id="faq5" class="faq-answer" role="region" aria-labelledby="faq5-btn" hidden>
+      Yes, our interior detailing includes thorough pet hair removal and odor neutralization to leave your car fresh.
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <h2>Book a Detailing Session</h2>
+  <form action="https://formspree.io/f/mvgqoaew" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required autocomplete="name" />
+    <input type="email" name="_replyto" placeholder="Your Email" required autocomplete="email" />
+    <input type="tel" name="phone" placeholder="Your Phone Number" required autocomplete="tel" />
+    
+    <label for="date">Preferred Date</label>
+    <input type="date" name="date" id="date" required />
+
+    <label for="time">Preferred Time</label>
+    <input type="time" name="time" id="time" required />
+
+    <label for="service">Select a Service</label>
+    <select name="service" id="service" required>
+      <option value="" disabled selected>Select a package</option>
+      <option value="Bronze">Bronze Package (£50)</option>
+      <option value="Silver">Silver Package (£120)</option>
+      <option value="Gold">Gold Package (£200)</option>
+      <option value="Bronze">Basic Interior (£30)</option>
+      <option value="Silver">Basic Exterior (£30)</option>
+      <option value="Gold">Premium Interior Clean (£90)</option>
+      <option value="Gold">Premium Exterior (£60)</option>
+    </select>
+
+    <textarea name="notes" rows="4" placeholder="Anything we should know? (e.g. pet hair, stains, etc.)"></textarea>
+
+    <button type="submit">Request Booking</button>
+  </form>
+</section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 07950266625 | 📧 Grime2ShineInquiries@gmail.com</p>
+    <p>
+      <!-- <a href="#" aria-label="Instagram Profile">Instagram</a> |
+      <a href="#" aria-label="Facebook Profile">Facebook</a> -->
+    </p>
+
+    <form action="https://formspree.io/f/xzzvpkrj" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required autocomplete="name" />
+      <input type="email" name="_replyto" placeholder="Your Email" required autocomplete="email" />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Grime2Shine Detailing. All rights reserved.
+  </footer>
+
+  <!-- Slideshow + Observer Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.gallery, .about p, .contact').forEach(section => {
+      observer.observe(section);
+    });
+
+    window.addEventListener('scroll', () => {
+      const about = document.getElementById('about');
+      const aboutText = about.querySelector('p');
+      const rect = about.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight * 0.85) {
+        aboutText.classList.add('visible');
+      }
+    });
+
+    // Slideshow logic with fade
+    const slideshowPairs = [
+  { before: 'before.mx5.jpg', after: 'after.mx5.jpg', modalId: 1 },
+  { before: 'before.fiat500 2.jpg', after: 'fiat500.before.jpg', modalId: 2 },
+  { before: 'beforeaudifront.jpg', after: 'afteraudifront.jpg', modalId: 3 },
+  { before: 'beforeaudiboot.jpg', after: 'afteraudiboot.jpg', modalId: 4 },
+  { before: 'beforeaudiback.jpg', after: 'afteraudiback.jpg', modalId: 5 },
+  { before: 'audioutsidebefore.jpg', after: 'audioutsideafter.jpg', modalId: 6 }
+];
+
+let currentIndex = 0;
+
+const beforeImage = document.getElementById('beforeImage');
+const afterImage = document.getElementById('afterImage');
+
+
+function fadeOut() {
+  beforeImage.style.opacity = '0';
+  afterImage.style.opacity = '0';
+}
+
+function fadeIn() {
+  beforeImage.style.opacity = '1';
+  afterImage.style.opacity = '1';
+}
+
+function showNextPair() {
+  fadeOut();
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % slideshowPairs.length;
+    const pair = slideshowPairs[currentIndex];
+
+    beforeImage.src = pair.before;
+    afterImage.src = pair.after;
+
+    fadeIn();
+  }, 800); // matches CSS transition duration
+}
+
+// Start cycling every 5 seconds
+setInterval(showNextPair, 3000);
+
+  
+  
+  const aboutRevealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('#about .reveal').forEach(el => {
+    aboutRevealObserver.observe(el);
+  });
+const pricingRevealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('#pricing .reveal').forEach(el => {
+  pricingRevealObserver.observe(el);
+});
+
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+      button.setAttribute('aria-expanded', 'false');
+    } else {
+      answer.style.display = 'block';
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeSections = document.querySelectorAll('.fade-in-section');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeSections.forEach(el => fadeObserver.observe(el));
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const fadeSections = document.querySelectorAll('.fade-in-section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: 0.2 // Adjust visibility threshold
+    });
+
+    fadeSections.forEach(section => {
+      observer.observe(section);
+    });
+  });
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
